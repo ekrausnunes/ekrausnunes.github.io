@@ -5,6 +5,11 @@ document.getElementById('searchID').addEventListener('keypress', function(e) {
     }
 });
 
+document.getElementById('button').addEventListener('click', function(e) {
+    e.preventDefault();
+    searchMovie(null);
+});  
+
 document.getElementById('results').addEventListener('click', function(e) {
     if (e.target.id !== '') {
         searchMovie(e.target.id);
