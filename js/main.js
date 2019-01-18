@@ -101,6 +101,7 @@ function modalMovie() {
     if (modal) {
         modal.classList.add('show');
         modal.addEventListener('click', function(e) {
+            e.preventDefault();
             if ( e.target.id === 'modalMovie' || e.target.className === 'closeModal') {
                 modal.classList.remove('show');
             }
