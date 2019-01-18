@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="utf-8">
+        <title> Ahgora </title>
+        <link href="style.css" rel="stylesheet" media="all" />
+    </head>
+    <body>
+          <header>
+            <h1> Filmes </h1>
+        </header>
+
+        <form name="formConsult">
+            <p class="search-container">
+                <input type="search" id="searchID" placeholder="Pesquisar" name="search" />
+                <button type="submit" id="button" onclick="searchMovie(null);"> Aplicar </button>
+            </p>
+            <table id="table" class="table table-responsive">
+                <thead> 
+                    <tr>
+                        <div class="titles">
+                            <th>Título</th>
+                            <th>Ano</th>
+                            <th>Genero</th>	
+                            <th style="display:none">ID</th>
+                        </div>
+                    </tr>
+                </thead>
+
+                <tbody id="results"> 
+                </tbody>
+            </table>
+        
+            <div id="modalMovie" class="modalDialog">
+                <div class="modalItens">              
+                    <img id="poster" class="modalImage" src="https://m.media-amazon.com/images/M/MV5BMTYwNjAyODIyMF5BMl5BanBnXkFtZTYwNDMwMDk2._V1_SX300.jpg">
+
+                    <div id="modalText" class="description">    
+                        <div id="title"> Batman </div>
+                        <div id="plot"> <br>The Dark Knight of Gotham City begins his war on crime with his first major enemy being the clownishly homicidal Joker.</div>
+                        <div id="year">Ano : 1989</div>
+                        <div id="genre">Genero : Action, Adventure</div>
+                        <div id="director">Director : N/A</div>
+                        <div id="awards">Premios : Won 1 Oscar. Another 8 wins & 26 nominations.</div>
+                    </div>
+
+                    <button class="closeModal" onclick="modalMovie()"> OK </button>
+                </div>
+            </div>
+        </form>
+        <script src="js/main.js"></script>
+    </body>
+</html>
