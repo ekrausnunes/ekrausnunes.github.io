@@ -66,12 +66,6 @@ function moviesFound(json) {
         td.innerHTML = json.Search[i].Type;
         tr.appendChild(td); 
 
-        td = document.createElement('td');
-        td.innerHTML = json.Search[i].imdbID;
-        td.style.display = 'none';
-        td.cl
-        tr.appendChild(td); 
-
        results.appendChild(tr); 
     }
 }
